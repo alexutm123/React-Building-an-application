@@ -1,15 +1,25 @@
 // src/components/IntroSection.jsx
 import React from 'react';
-import './IntroSection.css';
-
+import '../scss/IntroSection.scss';
+function Teachers() {
+  return (
+    <>
+      <li>1. JavaScript Developer</li>
+      <li>2. HTML/CSS Developer</li>
+      <li>3. React Developer</li>
+      <li>4. Node.js Developer</li>
+      <li>5. Front-end Developer</li>
+      <li>6. Full-stack Developer</li>
+    </>
+  );
+}
 const IntroSection = () => {
   return (
     <section className="intro-section">
       <h1>Welcome to Our Website</h1>
-      <p>
-        We offer a wide range of services to meet your needs. Whether you are looking for professional services or personal assistance, we have everything covered.
-      </p>
-      <button className="cta-button">Learn More</button>
+     <ul>
+  <Teachers/>
+     </ul>
     </section>
   );
 };
