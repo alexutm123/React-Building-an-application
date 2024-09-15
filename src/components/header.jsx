@@ -2,7 +2,13 @@
 import React from 'react';
 import '../scss/header.scss';
 import logo from '../../public/vite.svg';
+import { useState } from 'react';
 const Header = () => {
+  const [now, setNow] = useState(new Date())
+
+  setInterval(() => { 
+    setNow(new Date())
+  }, 1000)
   return (
     <header className="header">
       <div className="header-logo">
@@ -17,7 +23,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className="header-actions">
-        <button className="btn login-btn">Login</button>
+    <span>Time:{now.toLocaleTimeString()}</span>
       </div>
     </header>
   );

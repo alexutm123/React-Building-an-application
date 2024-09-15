@@ -18,7 +18,7 @@ function App() {
       <main>
         <IntroSection title="Welcome to Our Website" />
         <p className="d-flex justify-content-center align-items-center">{content}</p>
-        <MyButton onClick={handClick}>Button</MyButton>
+        <MyButton isActive={content==='Button clicked!'} onClick={handClick}>Button</MyButton>
       </main>
     </div>
   );
