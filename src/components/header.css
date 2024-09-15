@@ -1,0 +1,49 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    width: 100%; /* Хедер занимает всю ширину */
+    position: fixed; /* Хедер фиксирован наверху */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Поверх остальных элементов */
+  }
+  
+  .header-logo a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .header-nav .header-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header-nav .header-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .header-actions .btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .header-actions .btn:hover {
+    background-color: #e65c00;
+  }
+  
+  main {
+    margin-top: 60px; 
+  }
+  
