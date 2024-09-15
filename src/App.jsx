@@ -4,16 +4,20 @@ import './App.css';
 import Header from './components/Header'; 
 import IntroSection from './components/IntroSection';
 import MyButton from './components/Button';
+import { useState } from 'react';
 
 function App() {
+  const stateArray=useState();
+  const [content, setContent] = useState('Click me!');
   function handClick() {
-    alert('Button clicked!');
+    setContent('Button clicked!');
 }
   return (
     <div className="App">
       <Header />
       <main>
         <IntroSection title="Welcome to Our Website" />
+        <p className="d-flex justify-content-center align-items-center">{content}</p>
         <MyButton onClick={handClick}>Button</MyButton>
       </main>
     </div>
