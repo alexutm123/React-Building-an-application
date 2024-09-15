@@ -1,9 +1,10 @@
 // src/components/IntroSection.jsx
 import React from 'react';
 import '../scss/IntroSection.scss';
-function Teachers() {
+function Teachers(props) {
   return (
     <>
+    <h1>{props.title}</h1>
       <li>1. JavaScript Developer</li>
       <li>2. HTML/CSS Developer</li>
       <li>3. React Developer</li>

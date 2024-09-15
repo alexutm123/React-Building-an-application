@@ -1,17 +1,17 @@
 // src/App.jsx
 import React from 'react';
 import './App.css';
-import Header from './components/header'; 
+import Header from './components/Header'; 
 import IntroSection from './components/IntroSection';
-
+import MyButton from './components/Button';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <main>
-        <IntroSection />
-  
+        <IntroSection title="Welcome to Our Website" />
+        <MyButton>Button</MyButton>
       </main>
     </div>
   );
