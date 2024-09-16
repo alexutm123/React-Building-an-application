@@ -7,19 +7,21 @@ import MyButton from './components/Button';
 import { useState } from 'react';
 import { differences } from './data';
 import TeachingSection from './components/Teacing';
+import Hero from './components/Hero';
 function App() {
 
   function handClick() {
     setContent('Button clicked!');
 }
   return (
-    <div className="App">
+    <>
       <Header />
       <main>
+        <Hero />
         <TeachingSection />
 
       </main>
-    </div>
+      </>
   );
 }
 
