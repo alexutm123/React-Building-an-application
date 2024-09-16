@@ -5,10 +5,10 @@ import Header from './components/Header';
 import IntroSection from './components/IntroSection';
 import MyButton from './components/Button';
 import { useState } from 'react';
-
+import { differences } from './data';
+import TeachingSection from './components/Teacing';
 function App() {
-  const stateArray=useState();
-  const [content, setContent] = useState('Click me!');
+
   function handClick() {
     setContent('Button clicked!');
 }
@@ -16,9 +16,8 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <IntroSection title="Welcome to Our Website" />
-        <p className="d-flex justify-content-center align-items-center">{content}</p>
-        <MyButton isActive={content==='Button clicked!'} onClick={handClick}>Button</MyButton>
+        <TeachingSection />
+
       </main>
     </div>
   );
