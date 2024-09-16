@@ -1,0 +1,46 @@
+.metal-card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #b8b8b8, #e0e0e0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Добавляем эффект металлического блеска */
+  .metal-card::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* Анимация при наведении */
+  .metal-card:hover::before {
+    top: -100%;
+    left: 100%;
+  }
+  
+  .metal-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Дополнительный стиль текста */
+  .metal-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .metal-card p {
+    font-size: 16px;
+  }
+  

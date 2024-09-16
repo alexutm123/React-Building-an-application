@@ -2,25 +2,22 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header'; 
-import IntroSection from './components/IntroSection';
-import MyButton from './components/Button';
-import { useState } from 'react';
-import { differences } from './data';
-import TeachingSection from './components/Teacing';
 import Hero from './components/Hero';
-import TabsSections from './components/TabsSections';
+import { Cinemas } from './components/cinemas/component';
+import { cinemas } from './data';
+import Footer from './components/Footer';
+
 function App() {
 
- const [tab, setTab] = useState('Hero');
   return (
-    <>
+<div>
       <Header />
-      <main>
-        <Hero />
-        <TabsSections />
-        <TeachingSection />
+       <main>
+       <Hero />
+          <Cinemas cinemas={cinemas} />
       </main>
-      </>
+      <Footer />
+      </div>
   );
 }
 
