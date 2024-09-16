@@ -8,18 +8,17 @@ import { useState } from 'react';
 import { differences } from './data';
 import TeachingSection from './components/Teacing';
 import Hero from './components/Hero';
+import TabsSections from './components/TabsSections';
 function App() {
 
-  function handClick() {
-    setContent('Button clicked!');
-}
+ const [tab, setTab] = useState('Hero');
   return (
     <>
       <Header />
       <main>
         <Hero />
+        <TabsSections />
         <TeachingSection />
-
       </main>
       </>
   );
