@@ -6,7 +6,7 @@ export default function TeachingSection() {
     <section>
       <h3 className='text-center'>Наш подход к обучению</h3>
 
-      <ul>
+      <ul className='d-flex flex-column gap-3'>
         {ways.map((way) => (
           <WayToTeach key={way.title} {...way} />
         ))}
