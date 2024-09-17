@@ -4,7 +4,6 @@ import { Title } from "../title/component";
 import { Descriptions } from "../discriptions/descriptions";
 
 const ProfileCard = ({ cinema }) => {
-  // Деструктуризация объекта cinema
   const { title, description } = cinema;
 
   return (
