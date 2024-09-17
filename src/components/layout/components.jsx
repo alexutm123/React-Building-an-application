@@ -11,5 +11,5 @@ export const Layout =({children})=>
               </main>
             <Footer />
         </>
-    )
+    ) 
 }
