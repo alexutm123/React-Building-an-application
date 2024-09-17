@@ -13,12 +13,13 @@ ul
   list-style: none;
   padding: 0;
 }
-html, body {
+
+#root {
   height: 100%;
   margin: 0;
 }
 
-body {
+#root {
   display: flex;
   flex-direction: column;
 }
