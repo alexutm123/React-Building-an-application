@@ -1,31 +1,38 @@
-// src/components/Header.jsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../scss/header.scss';
 import logo from '../../public/vite.svg';
-import { useState } from 'react';
-const Header = () => {
-  const [now, setNow] = useState(new Date())
+import { Routes, Route, Link } from 'react-router-dom';
 
-  setInterval(() => { 
-    setNow(new Date())
-  }, 1000)
+const Header = () => {
+  const [now, setNow] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setNow(new Date());
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <header className="header">
-      <div className="header-logo">
-        <img src={logo} alt="Vite logo" />
-        <a href="/" className="text-uppercase">Your Logo</a>
-      </div>
-      <nav className="header-nav">
-        <ul className="header-menu pb-0 mb-0">
-          <li><a href="/about">About</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div className="header-actions">
-    <span>Time:{now.toLocaleTimeString()}</span>
-      </div>
-    </header>
+    <>
+    
+      <header className="header">
+        <div className="header-logo">
+          <img src={logo} alt="Vite logo" />
+          <Link to="/" className="text-uppercase">Your Logo</Link>
+        </div>
+        <nav className="header-nav">
+          <ul className="header-menu pb-0 mb-0">
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/product">Product</Link></li>
+          </ul>
+        </nav>
+        <div className="header-actions">
+          <span>Time: {now.toLocaleTimeString()}</span>
+        </div>
+      </header>
+    </>
   );
 };
 
