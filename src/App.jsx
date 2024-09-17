@@ -6,18 +6,15 @@ import Hero from './components/Hero';
 import { Cinemas } from './components/cinemas/component';
 import { cinemas } from './data';
 import Footer from './components/Footer';
+import { Layout } from './components/layout/components';
 
 function App() {
 
   return (
-       <>
-      <Header />
-        <main>
+       <Layout>
           <Hero />
-              <Cinemas cinemas={cinemas} />
-          </main>
-      <Footer />
-      </>
+          <Cinemas cinemas={cinemas} />
+      </Layout>
   );
 }
 
