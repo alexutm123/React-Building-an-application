@@ -7,7 +7,21 @@ export const dataShop = [
     "minPrice": 500,
     "numberOfCustomers": 1200,
     "rating": 1.5,
-    "image": "https://picsum.photos/150"
+    "image": "https://picsum.photos/150",
+    "comments": [
+      {
+        "comment": "I love this store! The products are amazing and the service is top-notch."
+      },
+      {
+        "comment": "Luxura Boutique provides a luxurious shopping experience. Highly recommended!"
+      },
+      {
+        "comment": "While the store has great products, I found the prices to be a bit high compared to other luxury boutiques."
+      },
+      {
+        "comment": "The staff at Luxura Boutique are very professional and helpful. A pleasure to shop here."
+      }
+    ]
   },
   {
     "store_id": 2,
@@ -17,7 +31,18 @@ export const dataShop = [
     "minPrice": 100,
     "numberOfCustomers": 850,
     "rating": 1.0,
-    "image": "https://picsum.photos/150"
+    "image": "https://picsum.photos/150",
+    "comments": [
+      {
+        "comment": "ValueMart is a great place for affordable shopping. I always find what I need."
+      },
+      {
+        "comment": "Excellent value for money and the staff are always friendly and helpful."
+      },
+      {
+        "comment": "Good selection of products, but sometimes the quality is inconsistent."
+      }
+    ]
   },
   {
     "store_id": 3,
@@ -27,7 +52,18 @@ export const dataShop = [
     "minPrice": 1000,
     "numberOfCustomers": 300,
     "rating": 1.7,
-    "image": "https://picsum.photos/150"
+    "image": "https://picsum.photos/150",
+    "comments": [
+      {
+        "comment": "Elegance Emporium lives up to its name with a stunning selection of high-end items."
+      },
+      {
+        "comment": "If you're looking for unique and luxury products, this is the place to go."
+      },
+      {
+        "comment": "Prices are high, but the exclusivity and quality of products justify it."
+      }
+    ]
   },
   {
     "store_id": 4,
@@ -37,6 +73,17 @@ export const dataShop = [
     "minPrice": 250,
     "numberOfCustomers": 950,
     "rating": 3.9,
-    "image": "https://picsum.photos/150"
+    "image": "https://picsum.photos/150",
+    "comments": [
+      {
+        "comment": "The General Store is my go-to for a variety of needs. They have everything!"
+      },
+      {
+        "comment": "Great place to find both everyday items and unique products. Always reliable."
+      },
+      {
+        "comment": "Good selection, though the store can be a bit crowded at times."
+      }
+    ]
   }
 ];

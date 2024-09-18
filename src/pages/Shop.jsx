@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import { Layout } from '../components/layout/components';
 import { useParams } from 'react-router-dom';
 import { dataShop } from '../data-shop';
@@ -11,6 +12,20 @@ function Shop() {
  if (!store) {
    return <div>Store not found</div>; // Обработка случая, если магазин не найден
  }
+ const [comments, setComments] = useState(store.comments || []);
+ const [newComment, setNewComment] = useState(''); 
+
+ const handleChange = (e) => {
+  setNewComment(e.target.value);
+};
+const handleSubmit = (e) => {
+  e.preventDefault();
+  if (newComment.trim()) {
+    const updatedComments = [...comments, { comment: newComment }];
+    setComments(updatedComments);
+    setNewComment('');
+  }
+};
 
   return (
     <Layout>
@@ -53,6 +68,38 @@ function Shop() {
                 <p><strong>Min Price:</strong> {store.minPrice}$</p>
                 <p><strong>Rating:</strong> {store.rating}</p>
                 <p><strong>Number of Customers:</strong> {store.numberOfCustomers}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="py-2">
+        <div className="row">
+          <div className="col-12">
+            <div className="card shadow-sm border-1">
+              <div className="card-body p-4">
+                <div className="card-title mb-4 text-center fw-bold fs-4">Comments</div>
+
+                {/* Comment Form */}
+                <form className="mb-4" onSubmit={handleSubmit}>
+                  <div className="mb-3">
+                    <textarea
+                      className="form-control"
+                      rows="3"
+                      placeholder="Add a comment..."
+                      value={newComment}
+                      onChange={handleChange}
+                    ></textarea>
+                  </div>
+                  <button type="submit" className="btn btn-primary">Submit</button>
+                </form>
+
+                {/* List of Comments */}
+                <ul className="list-group">
+                  {comments.map((comment, index) => (
+                      <li className="list-group-item">{comment.comment}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
