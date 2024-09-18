@@ -1,0 +1,27 @@
+/* Основной стиль для поля ввода */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Изменение стиля при фокусе */
+  input[type="text"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+    background-color: #fff;
+  }
+  
+  /* Дополнительная стилизация для закругленных углов и теней */
+  input[type="text"]::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  

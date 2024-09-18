@@ -1,0 +1,90 @@
+    
+.packet-card
+{
+    background-color: #2B2B2B;
+}
+.card {
+border: none;
+}
+
+.strip {
+    width: 100%;
+    height: 1px; 
+}
+
+.white {
+    background-color: #fff;
+}
+.card-title
+{
+    color: gold!important;
+}
+.title-card-packet, .packet-price , .features-package , .text-package , .performance
+{
+    color: #fff;
+}
+.icon-button {
+    display: flex;
+    align-items: center;
+    background-color: #2B2B2B; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.text {
+    margin-right: 15px; 
+    font-size: 20px;
+}
+.icon-btn
+{
+    font-size: 50px;
+}
+.icon-btn:hover {
+    color: gold; 
+    transform: scale(1.2);
+}
+.oval-btn {
+    background-color: gold; 
+    color: #fff;
+    border: none;
+    border-radius: 50px; 
+    padding: 10px 44px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+}
+
+.oval-btn:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 15px gold; 
+}
+.oval-btn-two {
+    background-color: transparent;
+    color: gold; 
+    border: 2px solid #fff; 
+    border-radius: 50px; 
+    padding: 10px 44px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+}
+
+.oval-btn-two:hover {
+    transform: scale(1.1); 
+}
+@media (max-width: 768px) {
+    .oval-btn {
+        padding: 10px 44px;
+        font-size: 14px;
+    }
+    .oval-btn-two {
+        padding: 10px 44px;
+        font-size: 14px;
+    }
+}

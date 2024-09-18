@@ -24,7 +24,7 @@ const Header = () => {
         <nav className="header-nav">
           <ul className="header-menu pb-0 mb-0">
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/shops">Shop's</Link></li>
             <li><Link to="/product">Product</Link></li>
           </ul>
         </nav>
