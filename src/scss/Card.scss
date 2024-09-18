@@ -88,3 +88,25 @@ border: none;
         font-size: 14px;
     }
 }
+.rating-stars {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star {
+    font-size: 1.5rem;
+    color: #f39c12; // Цвет для звезд
+  }
+  
+  .star.full {
+    color: #f39c12; // Полная звезда
+  }
+  
+  .star.half {
+    color: #f39c12; // Половинная звезда
+  }
+  
+  .star.empty {
+    color: #ccc; // Пустая звезда
+  }
+  

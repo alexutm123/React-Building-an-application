@@ -7,7 +7,6 @@ export default function Home() {
     <Layout>
       <Hero/>
       {/* <Cinemas cinemas={cinemas} /> */}
-      <MyBarChart />
     </Layout>
   );
 }

@@ -18,7 +18,6 @@ const StoreSearch = () => {
     <Layout>
         <div className='container'>
             <h1>Store Search</h1>
-            {/* Поле для ввода поискового запроса */}
             <input
               type="text"
               placeholder="Search store..."
@@ -29,9 +28,9 @@ const StoreSearch = () => {
             
             {filteredStores.length > 0 ? (
                 filteredStores.map(store => (
-                <div className="pb-5 packet-card rounded mb-1">
+                <div key={store.store_id} className="pb-5 packet-card rounded mb-1">
                     <div className="row justify-content-center">
-                      <Card packageData={store}  key={store.id}/>
+                      <Card packageData={store}/>
                     </div>
                  </div> 
                 ))
