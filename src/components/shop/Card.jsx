@@ -50,7 +50,7 @@ const Card = ({ packageData }) => {
             </p>
           </div>
           <div className="col-12 col-lg-3 d-flex flex-column justify-content-lg-center pt-3">
-            <Link to={`/store/${packageData.store_id}`} className="oval-btn text-center">START WINNING</Link>
+            <Link to={`/store/${packageData.store_id}`} className="oval-btn text-center">Details</Link>
           </div>
         </div>
       </div>
