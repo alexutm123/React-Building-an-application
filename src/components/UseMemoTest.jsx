@@ -1,7 +1,9 @@
 import React, { useState, useMemo } from 'react';
-
+import { useContext } from 'react';
+import MyContext from './MyContext';
 function useMemoTest() {
-  const [number, setNumber] = useState(1);
+  const contextValue = useContext(MyContext);
+  const [number, setNumber] = useState(contextValue);
 
   // Функция для дорогостоящих вычислений
   const computeExpensiveValue = (num) => {
