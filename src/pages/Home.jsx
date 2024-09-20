@@ -16,7 +16,7 @@ export default function Home() {
       <MyContext.Provider value={contextValue}>
         <UseMemoTest/>
     </MyContext.Provider>
-    <Event/>
+    <Event message="alert"> Upload Image </Event>
     </Layout>
   );
 }

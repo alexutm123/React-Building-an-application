@@ -1,11 +1,8 @@
-export default function Button() {
-    function handleClick() {
-        alert('You clicked me!');
-    }
+export default function Button({ message, children }) {
     return (
-      <button onClick={handleClick}>
-        I don't do anything
-      </button>
-    );
+        <button onClick={() => alert(message)}>
+          {children}
+        </button>
+      );
   }
   
