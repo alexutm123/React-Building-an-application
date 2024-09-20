@@ -7,7 +7,9 @@ import MyContext from '../components/MyContext';
 import Event from '../components/Events';
 export default function Home() {
   const contextValue = 1;
-
+  function handlePlayClick() {
+    alert(`Playing ${contextValue}!`);
+  }
   return (
     <Layout>
       <Hero/>
@@ -16,7 +18,7 @@ export default function Home() {
       <MyContext.Provider value={contextValue}>
         <UseMemoTest/>
     </MyContext.Provider>
-    <Event message="alert"> Upload Image </Event>
+    <Event onClick={handlePlayClick}> Upload Image </Event>
     </Layout>
   );
 }

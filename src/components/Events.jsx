@@ -1,6 +1,6 @@
-export default function Button({ message, children }) {
+export default function Button({ onClick, children }) {
     return (
-        <button onClick={() => alert(message)}>
+        <button onClick={onClick}>
           {children}
         </button>
       );
