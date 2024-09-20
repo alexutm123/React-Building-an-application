@@ -4,7 +4,7 @@ import Hero from '../components/Hero';
 import TestHuc from '../components/TestHuc';
 import UseMemoTest from '../components/UseMemoTest';
 import MyContext from '../components/MyContext';
-
+import Event from '../components/Events';
 export default function Home() {
   const contextValue = 1;
 
@@ -16,6 +16,7 @@ export default function Home() {
       <MyContext.Provider value={contextValue}>
         <UseMemoTest/>
     </MyContext.Provider>
+    <Event/>
     </Layout>
   );
 }
